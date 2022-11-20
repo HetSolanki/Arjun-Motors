@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8B4B365-B087-4A50-A0D3-2B07506743E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Project_App.My.MyApplication</StartupObject>
+    <RootNamespace>Project_App</RootNamespace>
+    <AssemblyName>Project_App</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Project_App.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Project_App.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity_Log.Designer.vb">
+      <DependentUpon>Activity_Log.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Activity_Log.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_expenses.Designer.vb">
+      <DependentUpon>Add_expenses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add_expenses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customer_master.Designer.vb">
+      <DependentUpon>customer_master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customer_master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAO.vb" />
+    <Compile Include="dealer_master.Designer.vb">
+      <DependentUpon>dealer_master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dealer_master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emplyoee_Main_Page.Designer.vb">
+      <DependentUpon>Emplyoee_Main_Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Emplyoee_Main_Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expenses.Designer.vb">
+      <DependentUpon>Expenses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expenses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgot_password.Designer.vb">
+      <DependentUpon>forgot_password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forgot_password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imap.vb" />
+    <Compile Include="Login_Page.Designer.vb">
+      <DependentUpon>Login_Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Page.Designer.vb">
+      <DependentUpon>Main_Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Payment_In.Designer.vb">
+      <DependentUpon>Payment_In.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_In.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product_Master.Designer.vb">
+      <DependentUpon>Product_Master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purachase_d.Designer.vb">
+      <DependentUpon>purachase_d.vb</DependentUpon>
+    </Compile>
+    <Compile Include="purachase_d.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase.Designer.vb">
+      <DependentUpon>Purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase_summary_rpt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>purchase_summary_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sale.Designer.vb">
+      <DependentUpon>sale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sale_d.Designer.vb">
+      <DependentUpon>sale_d.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sale_d.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale_Summary_rpt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sale_Summary_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shop.Designer.vb">
+      <DependentUpon>Shop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tr_Purchase.Designer.vb">
+      <DependentUpon>Tr_Purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tr_Purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tr_Sale.Designer.vb">
+      <DependentUpon>Tr_Sale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tr_Sale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Master.Designer.vb">
+      <DependentUpon>User_Master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User_Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_rtp.Designer.vb">
+      <DependentUpon>view_rtp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_rtp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Activity_Log.resx">
+      <DependentUpon>Activity_Log.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_expenses.resx">
+      <DependentUpon>Add_expenses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_master.resx">
+      <DependentUpon>customer_master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dealer_master.resx">
+      <DependentUpon>dealer_master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emplyoee_Main_Page.resx">
+      <DependentUpon>Emplyoee_Main_Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expenses.resx">
+      <DependentUpon>Expenses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgot_password.resx">
+      <DependentUpon>forgot_password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Page.resx">
+      <DependentUpon>Login_Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Page.resx">
+      <DependentUpon>Main_Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_In.resx">
+      <DependentUpon>Payment_In.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product_Master.resx">
+      <DependentUpon>Product_Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purachase_d.resx">
+      <DependentUpon>purachase_d.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase.resx">
+      <DependentUpon>Purchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchase_summary_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>purchase_summary_rpt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sale.resx">
+      <DependentUpon>sale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sale_d.resx">
+      <DependentUpon>sale_d.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale_Summary_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Sale_Summary_rpt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop.resx">
+      <DependentUpon>Shop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tr_Purchase.resx">
+      <DependentUpon>Tr_Purchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tr_Sale.resx">
+      <DependentUpon>Tr_Sale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Master.resx">
+      <DependentUpon>User_Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_rtp.resx">
+      <DependentUpon>view_rtp.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main_Login copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
